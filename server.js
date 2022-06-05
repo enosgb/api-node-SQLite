@@ -81,7 +81,7 @@ app.patch("/contato/:id", (req, res, next) => {
     db.run(
         `UPDATE contatos set 
            name = coalesce(?,name), 
-           email = COALESCE(?,email), 
+           email = coalesce(?,email), 
            phone = coalesce(?,phone) 
            WHERE id = ?`,
         [data.name, data.email, data.phone, req.params.id],
