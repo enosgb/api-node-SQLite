@@ -2,6 +2,7 @@
 api in NodeJS with CRUD | SQLite
 
 localhost:3000/contatos
+
 localhost:3000/contato/:id
 
 GET
